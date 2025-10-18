@@ -16,7 +16,7 @@ if __name__ == '__main__':
     mixer.init()  # Initialize mixer for audio playback
     recorder = AudioToTextRecorder(spinner=False, model="base.en", language="en",
                                    post_speech_silence_duration=0.15, silero_sensitivity=0.4)
-    hot_words = ["gideon"]
+    hot_words = ["Finn"]
     expecting_user_response = False
 
     print("Say something...")
@@ -85,3 +85,4 @@ if __name__ == '__main__':
     finally:
         print("Exiting Jarvis.")
         recorder.stop()
+
